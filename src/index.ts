@@ -1,6 +1,6 @@
 import './index.css';
-import REGL from 'regl'
 import { Resizer } from './resizer'
+const REGL = require("regl");
 
 const initialGraphX = 0;
 const initialGraphY = 0;

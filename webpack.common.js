@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlInlineScriptPlugin = require('html-inline-script-webpack-plugin');
 
 module.exports = {
     entry: './src/index.ts',
@@ -29,8 +30,12 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Mandel6',
-            template: 'src/index.html'
-        })
+            title: 'Template',
+            template: 'src/index.html',
+            minify: {
+                collapseWhitespace: false,
+            }
+        }),
+        new HtmlInlineScriptPlugin(),
     ]
 };

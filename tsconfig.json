@@ -1,11 +1,10 @@
 {
+    // followed some advice from https://developer.epages.com/blog/tech-stories/typescript-codesplitting-treeshaking/
+    // seems like I may need to integrate babel to get the full benefits :(
     "compilerOptions": {
-        "target": "ES2019", // TODO - figure out what the appropriate values should be here
-        "module": "CommonJS",
-        "strict": true,
-        "esModuleInterop": true,
-        //"skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "allowSyntheticDefaultImports": true
-    },
+        "moduleResolution": "node",
+        "module": "esnext",
+        "target": "esnext",
+        "sourceMap": true,
+    }
 }
