@@ -14,5 +14,7 @@ After a short wait you should be able to access USERNAME.github.io/REPONAME and 
 `npm run dev` - run dev server
 
 If you'd like to build under prod mode to test locally:
+
 `npm run build` - build for prod
+
 But this shouldn't be necessary since you can just use Pages!
